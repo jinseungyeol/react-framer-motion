@@ -20,15 +20,13 @@ const Box = styled(motion.div)`
 
 const myVars = {
   start: {scale: 0},
-  end: {scale: 1, rotateZ: 360}
+  end: {scale: 1, rotateZ: 360, transition: {type: "spring", delay: 0.5}}
 }
 
 function App() {
   return (
     <Wrapper>
-      <Box 
-        transition={{type: "spring", delay: 1}}
-      />
+      <Box  />
     </Wrapper>
   );
 }
