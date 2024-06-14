@@ -36,7 +36,7 @@ const boxVariants = {
 }
 
 function App() {
-  const biggerBoxRef = useRef<HTMLDivElement>(null);
+  const biggerBoxRef = useRef<HTMLDivElement>(null); //특정 Element를 잡을 수 있는 방법
   console.log(biggerBoxRef)
 
   return (
@@ -46,7 +46,7 @@ function App() {
           drag
           dragSnapToOrigin
           dragElastic={0.5}
-          dragConstraints={biggerBoxRef}
+          dragConstraints={biggerBoxRef} //biggerBoxRef까지로 제약을 걸어줌
           variants={boxVariants}
           whileHover="hover"
           whileTap="click"
